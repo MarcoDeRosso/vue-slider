@@ -17,20 +17,26 @@
 
         <div class="slider container">
             <div class="row">
-                <div class="arrow col-2" @click="prev">
-                    <i class="fas fa-arrow-circle-left"></i>
+                <div class=" col-2 my-5">
+                    <div class="arrow d-flex flex-row-reverse align-content-center align-items-center" @click="prev">
+                        <i class="fas fa-arrow-circle-left"></i>
+                    </div>
                 </div>
-                <div class="col-8 my-5 relative">
+                <div class="col-8 my-5 ">
                     <div class="img-container">
                         <img :src="listaImg[imgIndex]" alt="">
                     </div>
-                    <div class="slider-menu text-center">
-                        <i :class="isCurrentDot(index)" v-for="(img, index) in listaImg" @click="moveTo(index)" class="fas fa-circle mx-2">
-                        </i>
+                    <div class="slider-menu relative">
+                        <div class="opacity-slider-menu ">
+                            <i :class="isCurrentDot(index)" v-for="(img, index) in listaImg" @click="moveTo(index)" class="fas fa-circle mx-2"> 
+                            </i>
+                        </div>
                     </div>
                 </div>
-                <div class="arrow col-2" @click="next">
-                    <i class="fas fa-arrow-circle-right"></i>
+                <div class="col-2 my-5">
+                    <div class="arrow d-flex align-content-center align-items-center" @click="next">
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
