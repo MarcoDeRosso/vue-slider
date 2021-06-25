@@ -2,12 +2,8 @@
     position: relative;
 }
 
-.logo-container {
+.logo {
     width: 150px;
-}
-
-.logo-container img {
-    width: 100%;
 }
 
 .arrow {
